@@ -1,0 +1,37 @@
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0;
+  gap: 100px;
+  align-items: center;
+  .bannerLeft {
+    h4 {
+      margin: 0px;
+      color: gray;
+    }
+    h1 {
+      margin: 0;
+      font-size: 50px;
+    }
+    p {
+      margin: 30px 0;
+      color: gray;
+      line-height: 30px;
+    }
+    button {
+      background-color: #37806b;
+      color: #fff;
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      border: 2px solid transparent;
+      border-radius: 15px 0 15px 0;
+      cursor: pointer;
+      &:hover {
+        background-color: transparent;
+        border: 2px solid #37806b;
+        color: #000;
+      }
+    }
+  }
+}
