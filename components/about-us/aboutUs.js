@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import style from "../../styles/banner.module.scss";
+import style from "../../styles/about.module.scss";
 import AboutImage from "/public/images/aboutBanner.png";
 
 const AboutUs = () => {
