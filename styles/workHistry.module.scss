@@ -1,0 +1,92 @@
+$borderColor: rgb(216, 208, 208);
+.WorkHistry {
+  margin: 200px 0;
+  .heading {
+    width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .workDetails {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    .box {
+      position: relative;
+      background: white;
+      width: 185px;
+      height: 185px;
+      box-shadow: 2px 12px 35px 8px rgb(0 0 0 / 10%);
+      border-radius: 30px 0 30px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: auto;
+      h2 {
+        margin: 0px;
+        font-weight: bolder;
+        color: gray;
+      }
+      p {
+        margin-top: 10px;
+      }
+      &:nth-child(even) {
+        top: 92px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 187px;
+        height: 96px;
+        top: 50%;
+        left: 50%;
+        z-index: -999;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 187px;
+        height: 96px;
+        top: 50%;
+        right: 50%;
+        z-index: -999;
+      }
+      // start designing before and after sudo element
+      &:nth-child(1) {
+        &:after {
+          display: none;
+        }
+        &:before {
+          border-top: 5px solid $borderColor;
+          border-right: 5px solid $borderColor;
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          border-top: 5px solid $borderColor;
+        }
+        &:before {
+          border-top: 5px solid $borderColor;
+        }
+      }
+      &:nth-child(3) {
+        &:after {
+          border-top: 5px solid $borderColor;
+          border-left: 5px solid $borderColor;
+        }
+        &:before {
+          border-top: 5px solid $borderColor;
+          border-right: 5px solid $borderColor;
+        }
+      }
+      &:nth-child(4) {
+        &:after {
+          border-top: 5px solid $borderColor;
+        }
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
