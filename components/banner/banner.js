@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className={style.banner}>
       <div className={style.bannerLeft}>
-        <h4>MODERN INTERIOR</h4>
+        <h4>MODERN INTERIOR.</h4>
         <h1>Create Your Interior Design.</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
